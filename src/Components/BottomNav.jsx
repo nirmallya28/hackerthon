@@ -16,15 +16,39 @@ function BottomNav() {
         position: 'fixed', 
         bottom: 0, 
         overflowX: 'auto', // Allows horizontal scrolling
-        justifyContent: 'space-between', // Adds space between icons
+        justifyContent: 'center', // Centers the icons
       }}
     >
-      <BottomNavigationAction label="Ticket Booking" icon={<ConfirmationNumberIcon />} />
-      <BottomNavigationAction label="Train Enquiry" icon={<TrainIcon />} />
-      <BottomNavigationAction label="Retiring Room" icon={<EventSeatIcon />} />
-      <BottomNavigationAction label="Indian Railways" icon={<DirectionsRailwayIcon />} />
-      <BottomNavigationAction label="UTS Ticketing" icon={<BusinessCenterIcon />} />
-      <BottomNavigationAction label="Freight Booking" icon={<LocalShippingIcon />} />
+      <BottomNavigationAction 
+        label="Ticket Booking" 
+        icon={<ConfirmationNumberIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
+      <BottomNavigationAction 
+        label="Train Enquiry" 
+        icon={<TrainIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
+      <BottomNavigationAction 
+        label="Retiring Room" 
+        icon={<EventSeatIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
+      <BottomNavigationAction 
+        label="Indian Railways" 
+        icon={<DirectionsRailwayIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
+      <BottomNavigationAction 
+        label="UTS Ticketing" 
+        icon={<BusinessCenterIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
+      <BottomNavigationAction 
+        label="Freight Booking" 
+        icon={<LocalShippingIcon />} 
+        sx={{ minWidth: 60, flexShrink: 0 }} // Reduced width
+      />
     </BottomNavigation>
   );
 }
