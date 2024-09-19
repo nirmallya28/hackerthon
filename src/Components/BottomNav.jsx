@@ -1,4 +1,3 @@
-// src/BottomNav.js
 import React from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import TrainIcon from '@mui/icons-material/Train';
@@ -11,7 +10,14 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 function BottomNav() {
   return (
     <BottomNavigation
-      sx={{ display: { xs: 'flex', md: 'none' }, width: '100%', position: 'fixed', bottom: 0 }}
+      sx={{ 
+        display: { xs: 'flex', md: 'none' }, 
+        width: '100%', 
+        position: 'fixed', 
+        bottom: 0, 
+        overflowX: 'auto', // Allows horizontal scrolling
+        justifyContent: 'space-between', // Adds space between icons
+      }}
     >
       <BottomNavigationAction label="Ticket Booking" icon={<ConfirmationNumberIcon />} />
       <BottomNavigationAction label="Train Enquiry" icon={<TrainIcon />} />
